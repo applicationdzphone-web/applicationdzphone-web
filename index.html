@@ -3,280 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
-<title>DZPhone AI  PRO 2026</title>
-<meta name="robots" content="index, follow">
-<meta name="author" content="DZPhone Team">
-<meta name="description" content="DZPhone AI PRO 2026 – نظام ذكي لاختيار الهاتف الأفضل في الجزائر اعتمادًا على تحليل فعلي للأداء والسعر.">
+
+<title>أفضل هاتف في الجزائر 2026 | DZPhone AI</title>
+
+<meta name="description" content="DZPhone AI يساعدك على اختيار أفضل هاتف في الجزائر حسب الميزانية والاستخدام عبر ذكاء اصطناعي ذكي.">
+<meta name="keywords" content="أفضل هاتف الجزائر, مقارنة هواتف, هاتف ألعاب, هاتف تصوير, DZPhone AI">
 <meta name="theme-color" content="#0a0a0a">
 
-
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "DZPhone AI PRO",
-  "operatingSystem": "Web",
-  "applicationCategory": "UtilitiesApplication",
-  "description": "DZPhone هو تطبيق ذكي يساعدك على اختيار الهاتف الأنسب باستخدام الذكاء الاصطناعي",
-  "url": "https://applicationdzphone-web.github.io/applicationdzphone-web/",
-  "creator": {
-    "@type": "Organization",
-    "name": "DZPhone Team"
-  }
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 <style>
-/* ================== ROOT ================== */
-:root{
-  --bg:#0a0a0a;
-  --card:#121212;
-  --glass:rgba(255,255,255,.06);
-  --border:rgba(255,255,255,.12);
-  --primary:#3b82f6;
-  --accent:#22c55e;
-  --gold:#facc15;
-  --danger:#ef4444;
-  --text:#f5f5f5;
-  --muted:#9ca3af;
-}
-
-/* ================== RESET ================== */
-*{box-sizing:border-box;margin:0;padding:0}
 body{
-  font-family:"Cairo",sans-serif;
-  background:radial-gradient(circle at top,#111,#000);
-  color:var(--text);
-  min-height:100vh;
+    font-family:Cairo;
+    background:radial-gradient(circle at top,#111,#000);
+    color:#fff;
+    margin:0;
 }
-
-/* ================== LAYOUT ================== */
-.container{max-width:1100px;margin:auto;padding:20px}
-.hidden{display:none}
-
-/* ================== HERO ================== */
-.hero{
-  text-align:center;
-  padding:60px 20px;
+.container{max-width:900px;margin:auto;padding:20px}
+.card{
+    background:#121212;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:20px;
+    border:1px solid #333;
 }
-.hero h1{
-  font-size:2.2rem;
-  font-weight:900;
+h1,h2{text-align:center}
+select,input,button{
+    width:100%;
+    padding:14px;
+    border-radius:14px;
+    border:none;
+    margin-top:10px;
+    font-family:Cairo;
 }
-.hero p{
-  color:var(--muted);
-  margin-top:10px;
+select,input{background:#1a1a1a;color:#fff}
+button{
+    background:linear-gradient(90deg,#22c55e,#16a34a);
+    font-weight:900;
+    cursor:pointer;
+}
+.phone{
+    border:1px solid #333;
+    border-radius:16px;
+    padding:18px;
+    margin-top:15px;
+    position:relative;
 }
 .badge{
-  display:inline-block;
-  margin-bottom:15px;
-  padding:6px 14px;
-  border-radius:999px;
-  background:linear-gradient(90deg,var(--primary),#06b6d4);
-  font-size:12px;
-  font-weight:700;
+    position:absolute;
+    top:-10px;
+    left:15px;
+    background:gold;
+    color:#000;
+    padding:4px 12px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:900;
 }
-
-/* ================== CARD ================== */
-.card{
-  background:linear-gradient(180deg,var(--glass),transparent);
-  backdrop-filter:blur(16px);
-  border:1px solid var(--border);
-  border-radius:22px;
-  padding:24px;
-  margin-bottom:20px;
-}
-
-/* ================== FORM ================== */
-label{display:block;margin:14px 0 6px;font-size:14px}
-input,select{
-  width:100%;
-  padding:14px;
-  border-radius:14px;
-  border:1px solid var(--border);
-  background:#000;
-  color:var(--text);
-  font-size:15px;
-}
-button{
-  width:100%;
-  padding:16px;
-  margin-top:20px;
-  border:none;
-  border-radius:16px;
-  background:linear-gradient(90deg,var(--primary),#06b6d4);
-  color:#fff;
-  font-weight:900;
-  font-size:16px;
-  cursor:pointer;
-}
-button:active{transform:scale(.98)}
-
-/* ================== RESULT ================== */
-.phone{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:20px;
-  padding:20px;
-  margin-bottom:16px;
-  position:relative;
-}
-.rank{
-  position:absolute;
-  top:-10px;
-  left:20px;
-  background:var(--gold);
-  color:#000;
-  padding:4px 12px;
-  border-radius:999px;
-  font-size:11px;
-  font-weight:900;
-}
-.price{
-  font-size:1.6rem;
-  font-weight:900;
-  color:var(--accent);
-}
-.score{
-  font-size:13px;
-  color:var(--gold);
-}
-
-/* ================== AI EXPLAIN ================== */
+.price{font-size:22px;color:#22c55e;font-weight:900}
 .ai-box{
-  margin-top:12px;
-  padding:14px;
-  border-radius:14px;
-  background:rgba(34,197,94,.1);
-  border:1px dashed rgba(34,197,94,.4);
-  font-size:13px;
+    background:rgba(34,197,94,.1);
+    border:1px dashed rgba(34,197,94,.4);
+    border-radius:12px;
+    padding:12px;
+    margin-top:10px;
+    font-size:14px;
 }
-
-/* ================== FOOTER ================== */
-footer{
-  text-align:center;
-  padding:40px 20px;
-  font-size:12px;
-  color:var(--muted);
-}
+footer{text-align:center;color:#888;font-size:12px;padding:30px}
 </style>
 </head>
+
 <body>
 
-<div class="hero">
-  <div class="badge">DZPhone AI PRO 2026</div>
-  <h1>ذكاء اصطناعي لاختيار الهاتف المثالي</h1>
-  <p>تحليل حقيقي – بدون تضليل – بدون إعلانات</p>
+<div class="container">
+<h1>📱 DZPhone AI</h1>
+<p style="text-align:center;color:#aaa">ذكاء اصطناعي لاختيار الهاتف الأفضل في الجزائر</p>
+
+<div class="card" id="form">
+<label>نوع الاستخدام</label>
+<select id="use">
+<option value="gaming">🎮 ألعاب</option>
+<option value="camera">📸 تصوير</option>
+<option value="daily">🔋 يومي</option>
+</select>
+
+<label>الميزانية (دج)</label>
+<input type="number" id="budget" placeholder="مثال: 70000">
+
+<button onclick="analyze()">ابدأ التحليل الذكي</button>
 </div>
 
-<div class="container">
-
-  <div class="card" id="form">
-    <label>الاستخدام الأساسي</label>
-    <select id="use">
-      <option value="gaming">ألعاب وأداء</option>
-      <option value="camera">تصوير وصناعة محتوى</option>
-      <option value="daily">استخدام يومي</option>
-    </select>
-
-    <label>الميزانية (دج)</label>
-    <input type="number" id="budget" placeholder="مثال: 85000">
-
-    <button onclick="analyze()">ابدأ التحليل الذكي</button>
-  </div>
-
-  <div id="results"></div>
-
+<div id="results"></div>
 </div>
 
 <footer>
-  © 2026 DZPhone AI PRO – تحليل محلي ذكي – يعمل بدون سيرفر
+DZPhone AI © 2026 – يعمل بدون سيرفر
 </footer>
 
 <script>
-/* ================== DATABASE (2025–2026 ONLY) ================== */
+// ================= DATABASE =================
 const phones=[
-{
-name:"Samsung Galaxy S24 FE",
-price:98000,
-cpu:9.2, gpu:9.0, cam:8.8, bat:8.5,
-type:"camera"
-},
-{
-name:"Poco F6 Pro",
-price:89000,
-cpu:9.5, gpu:9.7, cam:8.3, bat:8.6,
-type:"gaming"
-},
-{
-name:"Redmi Note 14 Pro+",
-price:72000,
-cpu:8.4, gpu:8.0, cam:8.9, bat:8.8,
-type:"daily"
-},
-{
-name:"Samsung Galaxy A56",
-price:76000,
-cpu:8.6, gpu:8.1, cam:8.7, bat:8.7,
-type:"daily"
-},
-{
-name:"Realme GT Neo 6",
-price:83000,
-cpu:9.3, gpu:9.2, cam:8.2, bat:8.5,
-type:"gaming"
-}
+{name:"Poco F6 Pro",price:89000,cpu:9.6,cam:8.3,bat:8.6,type:"gaming"},
+{name:"Galaxy S24 FE",price:98000,cpu:9.2,cam:8.9,bat:8.5,type:"camera"},
+{name:"Redmi Note 14 Pro+",price:72000,cpu:8.4,cam:8.8,bat:8.8,type:"daily"},
+{name:"Galaxy A56",price:76000,cpu:8.6,cam:8.6,bat:8.7,type:"daily"},
+{name:"Realme GT Neo 6",price:83000,cpu:9.3,cam:8.2,bat:8.5,type:"gaming"}
 ];
 
-/* ================== AI ENGINE ================== */
-function scorePhone(p,use){
-let score=0;
-if(use==="gaming"){
-score = p.cpu*0.4 + p.gpu*0.4 + p.bat*0.2;
-}
-if(use==="camera"){
-score = p.cam*0.5 + p.cpu*0.25 + p.bat*0.25;
-}
-if(use==="daily"){
-score = p.bat*0.4 + p.cpu*0.3 + p.cam*0.3;
-}
-return score.toFixed(2);
+// ================= AI MEMORY =================
+function remember(use){
+let mem=JSON.parse(localStorage.getItem("dz_use"))||{};
+mem[use]=(mem[use]||0)+1;
+localStorage.setItem("dz_use",JSON.stringify(mem));
 }
 
-/* ================== ANALYZE ================== */
+// ================= SCORE =================
+function score(p,use){
+let s=0;
+if(use==="gaming") s=p.cpu*0.5+p.bat*0.3+p.cam*0.2;
+if(use==="camera") s=p.cam*0.5+p.cpu*0.3+p.bat*0.2;
+if(use==="daily") s=p.bat*0.4+p.cpu*0.3+p.cam*0.3;
+return s.toFixed(2);
+}
+
+// ================= AI TEXT =================
+function explain(p,use){
+const texts=[
+`تم اختياره لأنه يقدم أفضل توازن أداء مقابل السعر.`,
+`يتفوق على منافسيه في ${use==="gaming"?"الأداء":"الكاميرا"} ضمن هذه الفئة.`,
+`خيار ذكي لأنه مناسب لاستخدامك وميزانيتك.`,
+`أداء أعلى من المتوسط بسعر منطقي.`
+];
+return texts[Math.floor(Math.random()*texts.length)];
+}
+
+// ================= ANALYZE =================
 function analyze(){
 const use=document.getElementById("use").value;
 const budget=parseInt(document.getElementById("budget").value||999999);
+remember(use);
 
 let list=phones
 .filter(p=>p.price<=budget)
-.map(p=>({...p,score:scorePhone(p,use)}))
-.sort((a,b)=>b.score-a.score);
+.map(p=>({...p,ai:score(p,use)}))
+.sort((a,b)=>b.ai-a.ai);
 
-let html='<div class="card"><h3>نتائج الذكاء الاصطناعي</h3></div>';
+let html='<div class="card"><h2>نتائج الذكاء الاصطناعي</h2></div>';
 
 if(list.length===0){
-html+='<div class="card">❌ لا يوجد هاتف مناسب ضمن الميزانية</div>';
+html+='<div class="card">❌ لا يوجد هاتف ضمن الميزانية</div>';
 }
 
 list.forEach((p,i)=>{
 html+=`
 <div class="phone">
-${i===0?'<div class="rank">الأفضل</div>':''}
+${i===0?'<div class="badge">الأفضل</div>':''}
 <strong>${p.name}</strong>
 <div class="price">${p.price.toLocaleString()} دج</div>
-<div class="score">AI SCORE: ${p.score} / 10</div>
-<div class="ai-box">
-تم اختياره بسبب توازن الأداء الحقيقي مقابل السعر بناءً على استخدامك.
-</div>
-</div>
-`;
+<div>AI Score: ${p.ai}/10</div>
+<div class="ai-box">${explain(p,use)}</div>
+</div>`;
 });
 
 document.getElementById("results").innerHTML=html;
@@ -286,4 +173,4 @@ window.scrollTo(0,0);
 </script>
 
 </body>
-</html>l>
+</html>
